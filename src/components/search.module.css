@@ -1,0 +1,21 @@
+input {
+    border: none;
+    background-color: inherit;
+    font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.hitsWrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    padding: 0 180px;
+    z-index: 1;
+    background-color: white;
+    border-top: 1px solid #dbdbdb;
+}
+
+.hitsWrapperHidden {
+    display: none;
+}

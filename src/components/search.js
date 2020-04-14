@@ -35,6 +35,7 @@ const useClickOutside = (ref, handler, events) => {
   })
 }
 
+import styles from './search.module.css'
 export default function({ indices, collapse, hitsAsGrid }) {
   const ref = createRef()
   const [query, setQuery] = useState(``)
@@ -52,7 +53,7 @@ export default function({ indices, collapse, hitsAsGrid }) {
       root={{ Root, props: { ref } }}
     >
       <Input onFocus={() => setFocus(true)} {...{ collapse, focus }} />
-      <HitsWrapper show={query.length > 0 && focus} asGrid={hitsAsGrid}>
+      <HitsWrapper show={query.length > 0 && focus} asGrid={hitsAsGrid} className={`${styles.hitsWrapper} ${query.length ? "" : styles.hitsWrapperHidden}`}>
         {indices.map(({ name, title, hitComp }) => (
           <Index key={name} indexName={name}>
             <header>
