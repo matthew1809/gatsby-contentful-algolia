@@ -12,6 +12,5 @@ export default connectSearchBox(({ refine, ...rest }) => (
       onChange={e => refine(e.target.value)}
       {...rest}
     />
-    {/* <SearchIcon /> */}
   </Form>
 ))

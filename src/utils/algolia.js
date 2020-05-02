@@ -29,7 +29,6 @@ const postQuery = `{
             title
             slug
             date(formatString: "MMM D, YYYY")
-            tags
           }
           excerpt(pruneLength: 5000)
         }
