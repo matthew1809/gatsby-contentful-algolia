@@ -4,7 +4,6 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import SearchComp from '../components/searchComp'
-import styles from './search.module.css'
 
 class Search extends React.Component {
   render() {
@@ -14,7 +13,7 @@ class Search extends React.Component {
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
-          <div className={styles.hero}>Blog</div>
+          <div className="hero">Blog</div>
           <div className="wrapper">
             <SearchComp />
           </div>
