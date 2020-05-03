@@ -6,7 +6,6 @@ import {
   SearchBox,
   RefinementList,
 } from 'react-instantsearch-dom'
-import PropTypes from 'prop-types'
 import styles from './searchComp.module.css'
 import hit from './hit'
 
@@ -43,16 +42,4 @@ export default function() {
       </InstantSearch>
     </div>
   )
-}
-
-function Hit(props) {
-  return (
-    <div>
-      <h2>{props.hit.title}</h2>
-    </div>
-  )
-}
-
-Hit.propTypes = {
-  hit: PropTypes.object.isRequired,
 }

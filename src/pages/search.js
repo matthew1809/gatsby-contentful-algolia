@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import SearchComp from '../components/searchComp'
+import SearchComp from '../components/search/searchComp'
+import 'instantsearch.css/themes/algolia.css'
 
 class Search extends React.Component {
   render() {
