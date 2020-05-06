@@ -4,7 +4,7 @@ const postQuery = `{
       node {
         title
         slug
-        objectID: slug
+        objectID: contentful_id
         publishDate(formatString: "MMMM Do, YYYY")
         tags
         heroImage {
